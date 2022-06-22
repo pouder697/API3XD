@@ -52,7 +52,7 @@ public class ProyectoController {
 
     }
 
-    @PutMapping("/save/{id}")
+    @PutMapping("/edit/{id}")
      public ResponseEntity<Proyecto> update(@PathVariable(value = "id") int id,
             @Validated @RequestBody Proyecto proyecto) {
         if (id == proyecto.getIdproyecto()) {

@@ -52,7 +52,7 @@ public class EducacionController {
 
     }
 
-    @PutMapping("/save/{id}")
+    @PutMapping("/edit/{id}")
      public ResponseEntity<Educacion> update(@PathVariable(value = "id") int id,
             @Validated @RequestBody Educacion educacion) {
         if (id == educacion.getIdeducacion()) {

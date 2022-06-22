@@ -47,7 +47,7 @@ public class ExperienciaController {
 
     }
 
-    @PutMapping("/save/{id}")
+    @PutMapping("/edit/{id}")
      public ResponseEntity<Experiencia> update(@PathVariable(value = "id") int id,
             @Validated @RequestBody Experiencia experiencia) {
         if (id == experiencia.getIdexperiencia()) {

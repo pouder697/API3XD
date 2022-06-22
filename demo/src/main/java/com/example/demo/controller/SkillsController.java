@@ -47,7 +47,7 @@ public class SkillsController {
 
     }
 
-    @PutMapping("/save/{id}")
+    @PutMapping("/edit/{id}")
      public ResponseEntity<Skills> update(@PathVariable(value = "id") int id,
             @Validated @RequestBody Skills skills) {
         if (id == skills.getIdskills()) {

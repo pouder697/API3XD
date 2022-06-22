@@ -48,7 +48,7 @@ public class RedesController {
 
     }
 
-    @PutMapping("/save/{id}")
+    @PutMapping("/edit/{id}")
      public ResponseEntity<Redes> update(@PathVariable(value = "id") int id,
             @Validated @RequestBody Redes redes) {
         if (id == redes.getIdredes()) {

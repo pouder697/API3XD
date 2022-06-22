@@ -44,7 +44,7 @@ public class PersonaController {
 
     }
 
-    @PutMapping("/save/{id}")
+    @PutMapping("/edit/{id}")
      public ResponseEntity<Persona> update(@PathVariable(value = "id") int id,
             @Validated @RequestBody Persona persona) {
         if (id == persona.getIdpersona()) {
